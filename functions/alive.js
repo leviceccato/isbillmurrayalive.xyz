@@ -1,6 +1,6 @@
 const wikipedia = require('wikipedia')
 
-exports.handler = async (event, context) => {
+exports.handler = async () => {
     try {
 		const page = await wikipedia.page('Bill Murray')
 		const infobox = await page.infobox()
