@@ -24,7 +24,7 @@
         .Hero-heading {
             font-size: 72px;
             font-weight: 300;
-            font-family: 'Comic Sans', cursive, sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
     </style>
     <div class="Hero js-hero hidden">
@@ -49,7 +49,7 @@
 
         fetch('/.netlify/functions/alive')
             .then(response => response.json())
-            .then(data => { console.log(data); headingEl.innerText = data.message })
+            .then(data => headingEl.innerText = data.message)
             .catch(() => headingEl.innerText = 'I\'m not sure')
             .finally(() => {
                 load('alive-status')
