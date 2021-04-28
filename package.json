@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "netlify dev --dir public"
+  },
+  "devDependencies": {
+    "netlify-cli": "^3.22.0"
+  },
+  "dependencies": {
+    "wikipedia": "^1.1.1"
+  }
+}
